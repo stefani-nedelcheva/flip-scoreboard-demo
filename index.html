@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flip Scoreboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;700;900&family=Chakra+Petch:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="layout">
+      <section class="hero">
+        <p class="eyebrow">Vanilla JS + CSS 3D</p>
+        <h1>Flip Scoreboard</h1>
+        <p class="intro">
+          A sports scoreboard inspired by split-flap boards, built with a single HTML file, a small animation script,
+          and pure CSS perspective transforms.
+        </p>
+      </section>
+
+      <section class="board">
+        <div class="board__topline">
+          <span class="board__tag">Live Demo</span>
+          <span id="matchStatus" class="board__status">2nd half</span>
+        </div>
+
+        <div class="board__meta">
+          <span id="leagueName">Premier League</span>
+          <span id="stadiumName">Etihad Stadium</span>
+        </div>
+
+        <div class="teams">
+          <div class="team">
+            <p class="team__label">Home</p>
+            <h2 id="homeTeam" class="team__name">Manchester City</h2>
+          </div>
+
+          <div class="score-group">
+            <div class="score-column">
+              <p class="score-label">Home score</p>
+              <div id="homeScore" class="flip-display" aria-label="Home score"></div>
+            </div>
+
+            <div class="clock-column">
+              <p class="score-label">Match clock</p>
+              <div class="clock-row">
+                <div id="clockMinutes" class="flip-display clock-display" aria-label="Minutes"></div>
+                <span class="clock-separator">:</span>
+                <div id="clockSeconds" class="flip-display clock-display" aria-label="Seconds"></div>
+              </div>
+            </div>
+
+            <div class="score-column">
+              <p class="score-label">Away score</p>
+              <div id="awayScore" class="flip-display" aria-label="Away score"></div>
+            </div>
+          </div>
+
+          <div class="team team--right">
+            <p class="team__label">Away</p>
+            <h2 id="awayTeam" class="team__name">Liverpool</h2>
+          </div>
+        </div>
+
+        <p id="matchNote" class="match-note">Haaland 18', Foden 42' | Salah 51'</p>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
