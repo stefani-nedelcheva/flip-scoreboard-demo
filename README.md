@@ -13,6 +13,6 @@ A small vanilla JavaScript demo that mimics a split-flap style sports scoreboard
 
 Open `index.html` in the browser, or serve the folder with any static server.
 
-## Deploy
+## Demo
 
-Push the repository to GitHub and enable GitHub Pages from the repository settings.
+https://stefani-nedelcheva.github.io/flip-scoreboard-demo/
